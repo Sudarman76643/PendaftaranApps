@@ -82,7 +82,7 @@ class AddUpdateActivity : AppCompatActivity() {
                 showLoading(false)
                 if (response.isSuccessful) {
                     response.body()?.let {
-                        Toast.makeText(this@AddUpdateActivity, "success", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(this@AddUpdateActivity, "Siswa Deleted Successfully", Toast.LENGTH_SHORT).show()
                         startActivity(Intent(this@AddUpdateActivity, MainActivity::class.java))
                         finish()
                     } ?: Toast.makeText(this@AddUpdateActivity, "null", Toast.LENGTH_SHORT).show()
@@ -106,7 +106,7 @@ class AddUpdateActivity : AppCompatActivity() {
                     showLoading(false)
                     if (response.isSuccessful) {
                         response.body()?.let {
-                            Toast.makeText(this@AddUpdateActivity, "success", Toast.LENGTH_SHORT).show()
+                            Toast.makeText(this@AddUpdateActivity, "Calon Siswa Updated Successfully", Toast.LENGTH_SHORT).show()
                             startActivity(Intent(this@AddUpdateActivity, MainActivity::class.java))
                             finish()
                         } ?: Toast.makeText(this@AddUpdateActivity, "null", Toast.LENGTH_SHORT).show()
