@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">PendaftaranApps</string>
+    <string name="nama_siswa">nama_siswa\n</string>
+    <string name="nama">nama</string>
+    <string name="alamat">alamat</string>
+    <string name="jenis_kelamin">jenis kelamin</string>
+    <string name="agama">agama</string>
+    <string name="sekolah_asal">sekolah asal</string>
+    <string name="save">save\n</string>
+    <string name="delete">delete</string>
+    <string name="error">wajib diisi</string>
+    <string name="update">update</string>
+</resources>
