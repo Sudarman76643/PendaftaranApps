@@ -3,6 +3,7 @@ package com.example.pendaftaranapps.data.retrofit
 import com.example.pendaftaranapps.data.response.AddUpdateResponse
 import com.example.pendaftaranapps.data.response.ListSiswaResponse
 import retrofit2.Call
+import retrofit2.http.DELETE
 import retrofit2.http.Field
 import retrofit2.http.FormUrlEncoded
 import retrofit2.http.GET
@@ -35,10 +36,9 @@ interface ApiService {
         @Field("sekolah_asal") sekolahAsal: String
     ): Call<AddUpdateResponse>
 
-    @FormUrlEncoded
-    @POST("api-delete-siswa.php")
+    @DELETE("api-delete-siswa.php")
     fun deleteSiswa(
-        @Field("id") id: Int
+        @Query("id") id: Int
     ): Call<AddUpdateResponse>
 
 

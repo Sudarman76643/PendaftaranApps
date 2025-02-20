@@ -23,7 +23,7 @@
         android:theme="@style/Theme.PendaftaranApps"
         tools:targetApi="31">
         <activity
-            android:name=".AddUpdateActivity"
+            android:name=".ui.AddUpdateActivity"
             android:exported="false" />
         <activity
             android:name=".ui.MainActivity"
